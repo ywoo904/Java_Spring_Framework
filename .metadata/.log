@@ -849,3 +849,15 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-16 12:34:20.047
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-16 12:39:52.305
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TcdGAdfg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-16 12:39:52.306
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.TcdGAdfg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-16 12:39:52.306
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-16 12:39:52.307
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TcdGAdfg => OK
