@@ -1,0 +1,24 @@
+package com.zerock.command;
+
+public class MemberVO {
+
+	//기본 생성자
+	String id; 
+	String pw; 
+	String name; 
+	
+	public MemberVO()  { 
+		
+		
+	}
+
+	public MemberVO(String id, String pw, String name) {
+		super();
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+	} 
+	
+	
+	
+}
