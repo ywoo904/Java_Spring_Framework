@@ -2,8 +2,11 @@ package com.zerock.service;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Service;
+
 import com.zerock.command.MemberVO;
 
+@Service("memberService")
 public class MemberServiceImpl implements MemberService {
 
 	ArrayList<MemberVO> memberList = new ArrayList<MemberVO>(); 
@@ -18,6 +21,8 @@ public class MemberServiceImpl implements MemberService {
 	//로그인 유효성검사
 	@Override
 	public int memberCheck(MemberVO vo) {
+		
+		
 		
 		return 0;
 	}
