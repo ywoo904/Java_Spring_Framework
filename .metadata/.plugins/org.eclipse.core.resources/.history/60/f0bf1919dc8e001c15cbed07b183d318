@@ -1,0 +1,21 @@
+package src.test.resources;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/test/*")
+public class TestController {
+
+	@RequestMapping(value="/req_ex01") 
+	public void req_ex01() {  
+		System.out.println("req_ex01 테스트");
+			
+	} 
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package src.test.resources;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TestController {
+
+	
+	
+	
+}
