@@ -6242,3 +6242,39 @@ org.xml.sax.SAXParseException; lineNumber: 34; columnNumber: 1; XML document str
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:01:24.705
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:01:59.101
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:01:59.104
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:23.183
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:23.186
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:25.277
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:25.283
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:30.319
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-17 15:02:30.321
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 15:04:23.022
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QTKlUdEU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 15:04:23.023
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QTKlUdEU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 15:04:23.023
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 15:04:23.024
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QTKlUdEU => OK

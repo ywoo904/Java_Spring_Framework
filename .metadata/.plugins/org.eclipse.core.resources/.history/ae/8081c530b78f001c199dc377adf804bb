@@ -43,7 +43,6 @@ public interface ScoreServiceController {
 		
 		ArrayList<ScoreVo> scorelist= scoreService.scoreResult();
 		model.addAttribute("scorelist",scorelist); 
-		
 		return "service/3scoreResult";
 		
 	} 

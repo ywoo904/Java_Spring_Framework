@@ -3,7 +3,6 @@ package com.zerock.controller;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.zerock.command.ScoreVO;
@@ -42,7 +41,6 @@ public interface ScoreServiceController {
 	public String scoreList(Model model) {
 		
 		ArrayList<ScoreVo> scorelist= scoreService.scoreResult();
-		model.addAttribute("scorelist",scorelist); 
 		
 		return "service/3scoreResult";
 		
