@@ -1,0 +1,10 @@
+package com.zerock.service;
+
+import java.util.ArrayList;
+
+import com.zerock.command.MemberVO;
+
+public class JoinServiceImpl implements JoinService {
+
+	ArrayList<MemberVO> memberList = new ArrayList<MemberVO>(); 
+}

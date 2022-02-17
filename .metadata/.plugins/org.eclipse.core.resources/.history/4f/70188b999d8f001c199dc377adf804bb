@@ -1,0 +1,13 @@
+package com.zerock.command;
+
+public class JoinVO {
+
+	
+	String id; 
+	String pw; 
+	String name;
+	
+	
+	
+	
+}

@@ -8,8 +8,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.zerock.command.JoinVO;
 import com.zerock.command.MemberVO;
+import com.zerock.service.JoinService;
 import com.zerock.service.MemberService;
 
 @Controller
@@ -19,6 +23,9 @@ public class MemberServiceController {
 	//인터페이스에 의존성 주입
 	@Autowired
 	MemberService memberService; 
+	
+	@Autowired
+	JoinService joinService;
 	
 	//로그인 입력페이지 
 	@RequestMapping("/member_ex01") 
@@ -35,14 +42,60 @@ public class MemberServiceController {
 		return "service/member_ex00";
 	}
 
-	//회원가입 정상처리 페이지
-	@RequestMapping("/join")
-	public String join(MemberVO vo) { 
+	//회원가입처리 메서드 
+	//@RequestMapping("join")
+	//public String join(MemberVO vo) { 
 		
-		memberService.insertMember(vo);
+	//	memberService.insertMember(vo);
 		
-		return "service/member_ex02";
+	//	return "service/member_ex02";
+	//}
+	
+	//회원로그인 화면처리
+	@RequestMapping("/member_ex03")
+	public String member_ex03() { 
+		
+		
+		return "service/member_ex03"; 
+	} 
+	
+	//로그인 메서드 처리
+	@RequestMapping("login")
+	public ModelAndView login(MemberVO vo, Model model, RedirectAttributes RA) { 
+	
+	//로그인 유효성 검사(서비스로 아이디를 전달) 
+	int result=	memberService.memberCheck(vo); 
+	ModelAndView mav= new ModelAndView(); //ModelAndView객체선언
+	
+	if (result ==1) {//로그인 성공 
+		//model.addAttribute("memberInfo",vo); //modelandview로 변경
+		mav.addObject("memberInfo", vo); 
+		mav.setViewName("service/member_mypage");
+		
+	return mav;//성공 시 마이페이지 이동
+	
+	} else { //로그인 실패  
+		RA.addFlashAttribute("msg","아이디 또는 비밀번호 확인해주세요"); 
+		mav.setViewName("redirect:/service/member_ex03");
+		
+	return mav; //실패 시 로그인페이지 이동
 	}
+	} 
+
+	@RequestMapping("/join")
+	public ModelAndView member_join(JoinVO vo, MemberVO vo2, Model model) { 
+		ModelAndView mav= new ModelAndView();
+		joinService.joinMember(vo); 
+		
+		mav.addObject("memberInfo", vo); 
+		mav.setViewName("service/member_ex03");
+		
+		
+		memberService.insertMember(vo2);
+		return mav;
+	} 
+	
+	
 	
 	
 	@RequestMapping(value="/memlogin", method=RequestMethod.POST)
@@ -84,6 +137,7 @@ public class MemberServiceController {
 	return "service/result"; 
 		
 	} 
+	
 	
 	
 	

@@ -1,0 +1,6 @@
+package com.zerock.service;
+
+public class JoinServiceImpl implements JoinService {
+
+
+}
