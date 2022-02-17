@@ -1,0 +1,30 @@
+package com.zerock.service;
+
+import java.util.ArrayList;
+
+import com.zerock.command.ScoreVO;
+
+public interface ScoreServiceImpl implements ScoreService {
+	ArrayList<ScoreVO> list= new ArrayList<ScoreVO>();  
+	
+	@Override
+	public void scoreRegist(ScoreVO dao) {
+		// TODO Auto-generated method stub
+
+	
+	
+	@Override
+	public void scoreDelete(String num) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public ArrayList<ScoreVO> scoreResult() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+	
+}} 

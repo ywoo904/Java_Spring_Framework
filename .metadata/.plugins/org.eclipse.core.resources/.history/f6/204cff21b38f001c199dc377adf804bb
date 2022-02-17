@@ -1,0 +1,12 @@
+package com.zerock.service;
+
+import com.zerock.command.ScoreVO;
+
+public interface ScoreService {
+
+	
+	public void scoreRegist(ScoreVO dao);//점수등록
+	
+	
+	
+}

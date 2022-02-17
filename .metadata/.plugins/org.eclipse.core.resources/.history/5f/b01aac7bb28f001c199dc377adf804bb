@@ -1,0 +1,13 @@
+package com.zerock.command;
+
+public class ScoreVO {
+
+	String name; 
+	String kor; 
+	String eng; 
+	String math; 
+	
+	
+	
+	
+}

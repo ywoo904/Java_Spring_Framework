@@ -1,0 +1,22 @@
+package com.zerock.service;
+
+public interface ScoreServiceImpl extends ScoreService {
+
+	@Override
+	public void scoredelete(String num) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public ArrayList<ScoreVO> scoreResult() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public void scoreRegist(ScoreVO dao) {
+		// TODO Auto-generated method stub
+		
+	
+}

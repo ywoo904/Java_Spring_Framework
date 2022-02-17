@@ -1,0 +1,30 @@
+package com.zerock.service;
+
+import java.util.ArrayList;
+
+import com.zerock.command.ScoreVO;
+
+public interface ScoreServiceImpl implements ScoreService {
+	ArrayList<ScoreVO> list= new ArrayList<ScoreVO>();  
+	
+	@Override
+	public void scoreRegist(ScoreVO dao) {
+		System.out.println("------서비스검증-------");
+		
+	
+	
+	@Override
+	public void scoreDelete(String num) {
+	
+		
+	}
+	
+	@Override
+	public ArrayList<ScoreVO> scoreResult() {
+
+		return null;
+	}
+	
+
+	
+}} 
