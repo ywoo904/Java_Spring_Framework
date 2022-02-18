@@ -10,4 +10,5 @@ public interface ScoreService {
 	public ArrayList<ScoreVO> scoreResult();  //점수 결과
 	public void scoreDelete(String num);	  //점수 삭제
 
+	
 }

@@ -1,0 +1,30 @@
+package com.zerock.service;
+
+import java.util.ArrayList;
+
+import com.zerock.command.BoardVO;
+
+public class BoardServiceImpl implements BoardService {
+
+	@Override
+	public void register(String name, String title, String content) {
+		
+		
+		
+		
+		
+	}
+
+	@Override
+	public ArrayList<BoardVO> getList() {
+		
+		return null;
+	}
+
+	@Override
+	public void delete(String num) {
+		
+
+	}
+
+}

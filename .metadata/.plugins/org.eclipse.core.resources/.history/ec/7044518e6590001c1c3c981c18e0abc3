@@ -1,0 +1,15 @@
+package com.zerock.command;
+
+public class BoardVO {
+
+	private int num; 
+	private String name; 
+	private String title; 
+	private String content; 
+	
+	public BoardVO() { } 
+	
+	
+	
+	
+}

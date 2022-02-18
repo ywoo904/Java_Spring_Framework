@@ -39,6 +39,9 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
 		</dependency>	
+	
+		
+		
 		
 		<!-- Logging -->
 		<dependency>
@@ -109,13 +112,45 @@
 			<version>1.2</version>
 		</dependency>
 	
-		<!-- Test -->
+	
+	<!-- ojdbc8 -->
+	<dependency>
+    	<groupId>com.oracle.database.jdbc</groupId>
+    	<artifactId>ojdbc8</artifactId>
+    	<version>21.1.0.0</version>
+	</dependency>
+	
+	<!-- Hikari CP(커넥션 풀) -->	
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.7.4</version>
+		</dependency>
+		
+	<!-- Spring-JDBC templete사용하기 위해서 추가 -->	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+	<!-- 스프링 테스트를 하고자 할때 추가 -->
+		<dependency> 
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.0.7.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>        
+
+		
+		
 	</dependencies>
     <build>
         <plugins>
@@ -154,5 +189,9 @@
                 </configuration>
             </plugin>
         </plugins>
+        
+        
+        
+        
     </build>
 </project>

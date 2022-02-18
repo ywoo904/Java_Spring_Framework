@@ -1,0 +1,10 @@
+package com.zerock.service;
+
+public interface BoardService {
+
+	//board등록메시지 
+	
+	//모든게시물 가져오기
+	
+	
+}

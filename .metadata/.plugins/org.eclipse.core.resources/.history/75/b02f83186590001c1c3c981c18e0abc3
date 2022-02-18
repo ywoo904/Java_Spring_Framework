@@ -1,0 +1,19 @@
+package com.zerock.service;
+
+public interface BoardService {
+
+	//board등록메시지 
+	public void register(String name,String title, String content) {
+		
+		
+	} 
+	
+	
+	//모든게시물 가져오기 
+	
+	
+	
+	//게시글 삭제 
+	
+	
+}

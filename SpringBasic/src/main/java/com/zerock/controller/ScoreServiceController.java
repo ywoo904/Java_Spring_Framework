@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zerock.command.ScoreVO;
+import com.zerock.dao.ScoreDAO;
 import com.zerock.service.ScoreService;
 import com.zerock.service.ScoreServiceImpl;
 
@@ -19,11 +20,15 @@ public class ScoreServiceController {
 	//1. 객체 생성
 	//ScoreService scoreService = new ScoreServiceImpl();
 	
+
+	
 	//2. 설정에 bean등록 후에 ScoreService scoreService 주입설정 
 	//@Resource(name="scoreService")
 	//ScoreService scoreService; // <beans:bean id="scoreService" class="com.zerock.service.ScoreServiceImpl" />
 	
 	//3. 어노테이션을 이용한 빈생성 및 자동 주입 설정 (//@Service로 주입)
+	
+	
 	@Autowired
 	ScoreService scoreService;  //service패키지에 컴포넌트 스캔 걸어야 함.... 
 	

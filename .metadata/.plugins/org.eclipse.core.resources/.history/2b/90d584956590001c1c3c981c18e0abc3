@@ -1,0 +1,15 @@
+package com.zerock.command;
+
+public class BoardVO {
+
+	private int num; 
+	private String name; 
+	private String title; 
+	private String content; 
+	
+	public BoardVO() { } //별 의미 없지만 오류방지발생방지 
+	
+	
+	
+	
+}

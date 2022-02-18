@@ -2,11 +2,13 @@ package com.zerock.service;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import com.zerock.command.ScoreVO;
+import com.zerock.dao.ScoreDAO;
 
 //@Component  //잘됨
 //@Component("scoreService")   //잘됨
@@ -16,7 +18,10 @@ import com.zerock.command.ScoreVO;
 @Service("scoreService")  //해당 클래스를 컨테이너에 빈으로 생성하겠다는 어노테이션
 public class ScoreServiceImpl implements ScoreService {
 
-	ArrayList<ScoreVO> list = new ArrayList<ScoreVO>();
+//	ArrayList<ScoreVO> list = new ArrayList<ScoreVO>();
+	
+	@Autowired 
+	private ScoreDAO scoreDAO;
 	
 	@Override
 	public void scoreRegist(ScoreVO dao) {
@@ -27,23 +32,21 @@ public class ScoreServiceImpl implements ScoreService {
 		System.out.println(dao.getEng());
 		System.out.println(dao.getMath());
 		
-		list.add(dao);
+		scoreDAO.scoreInsert(dao);
 		
-		System.out.println(list.toString());	
-	
 	}
 
 	@Override
 	public ArrayList<ScoreVO> scoreResult() {
-		return list;
+		
+		ArrayList<ScoreVO> DB= scoreDAO.scoreSelect(); 
+		return DB;
 	}
 
 	@Override
-	public void scoreDelete(String number) {
+	public void scoreDelete(String num) {
+		scoreDAO.scoreDelete(num);
 		
-		int num = Integer.parseInt(number);
-		list.remove(num);
-
 	}
 
 }
