@@ -1,0 +1,5 @@
+package com.zerock.dao;
+
+public interface ScoreDAO {
+
+}

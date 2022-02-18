@@ -1,0 +1,42 @@
+package com.zerock.dao;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Repository;
+
+import com.zerock.command.ScoreVO;
+
+
+
+
+//DAO객체주입은 일반적으로 Component나 Repository Annotation을 사용합니다.  
+//Component-scan에 꼭 추가해준다. 
+	
+//@Component
+@Repository
+public class ScoreeDAOImpl implements ScoreDAO {
+	
+	//DB를 대신할 저장소필요
+	
+	ArrayList<ScoreVO> DB = new ArrayList<ScoreVO>(); 
+	
+	
+	
+	@Override
+	public void scoreInsert(ScoreVO vo) {
+	
+
+	}
+
+	@Override
+	public ArrayList<ScoreVO> scoreSelect() {
+		
+		return null;
+	}
+
+	@Override
+	public void scoreDelete(String num) {
+	
+	}
+
+}

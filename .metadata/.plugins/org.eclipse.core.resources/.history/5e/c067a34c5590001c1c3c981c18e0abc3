@@ -1,0 +1,15 @@
+package com.zerock.dao;
+
+import com.zerock.command.ScoreVO;
+
+public interface ScoreDAO {
+
+	public void scoreInsert(ScoreVO); //점수입력 메서드 
+	
+	
+	
+	
+	
+	
+	
+}

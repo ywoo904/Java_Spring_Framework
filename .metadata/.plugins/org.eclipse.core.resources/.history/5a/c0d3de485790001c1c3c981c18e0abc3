@@ -1,0 +1,20 @@
+package com.zerock.service;
+
+import org.springframework.stereotype.Service;
+
+import com.zerock.dao.ScoreDAO;
+import com.zerock.dao.ScoreeDAOImpl;
+
+@Service("scoreService")
+public abstract class ScoreServiceImpl implements ScoreService {
+
+//-------------DAO 들어가기----------
+	//1st 
+	ScoreDAO scoreDAO = new ScoreeDAOImpl(); 
+	
+	
+	
+	
+	
+	
+}

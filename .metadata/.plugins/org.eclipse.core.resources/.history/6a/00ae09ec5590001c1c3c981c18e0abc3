@@ -1,0 +1,30 @@
+package com.zerock.dao;
+
+import java.util.ArrayList;
+
+import com.zerock.command.ScoreVO;
+
+public class ScoreeDAOImpl implements ScoreDAO {
+
+	
+	
+	
+	@Override
+	public void scoreInsert(ScoreVO vo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ArrayList<ScoreVO> scoreSelect() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void scoreDelete(String num) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

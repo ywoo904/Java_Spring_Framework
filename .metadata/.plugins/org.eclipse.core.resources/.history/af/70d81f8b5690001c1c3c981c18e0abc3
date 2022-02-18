@@ -1,0 +1,7 @@
+package com.zerock.service;
+
+public interface ScoreServiceImpl extends ScoreService {
+
+	
+	
+}

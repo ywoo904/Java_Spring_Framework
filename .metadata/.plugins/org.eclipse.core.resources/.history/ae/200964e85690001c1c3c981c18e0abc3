@@ -1,0 +1,14 @@
+package com.zerock.service;
+
+import org.springframework.stereotype.Service;
+
+@Service("scoreService")
+public interface ScoreServiceImpl implements ScoreService {
+
+	
+
+	
+	
+	
+	
+}
