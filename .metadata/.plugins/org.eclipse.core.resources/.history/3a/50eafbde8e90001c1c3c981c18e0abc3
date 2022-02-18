@@ -15,14 +15,17 @@
 		<property name="username" value="myjsp"></property>
 		<property name="password" value="myjsp"></property>	
 	</bean>
-		
+	
+	
+	
+	
+	
 	<!-- DataSource설정  -->
 	<bean id="ds" class="com.zaxxer.hikari.HikariDataSource">
 		<constructor-arg ref="hikariConfig"></constructor-arg>
 	</bean>
 	
-	<!-- JDBC템플릿 설정 여기서부터 강의시작 -->
-	
+
 
 
 

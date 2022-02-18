@@ -15,14 +15,18 @@
 		<property name="username" value="myjsp"></property>
 		<property name="password" value="myjsp"></property>	
 	</bean>
-		
+	
+	<!-- jdbc Templete사용을 위한 bean추가 -->
+
+	<!-- jdbcTemplete이름으로 객체생성하여 의존주입 -->	
+	
+	
 	<!-- DataSource설정  -->
 	<bean id="ds" class="com.zaxxer.hikari.HikariDataSource">
 		<constructor-arg ref="hikariConfig"></constructor-arg>
 	</bean>
 	
-	<!-- JDBC템플릿 설정 여기서부터 강의시작 -->
-	
+
 
 
 

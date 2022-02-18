@@ -8,20 +8,21 @@
 	<!-- 기본적으로 classpath에 경로를 WEB-INF아래 classes폴더 경로를 잡도록 설정되어있습니다. -->
 	<!-- DB설정 파일을 작성한다면,classes 폴더경로를 기준으로 경로설정을 하도록 합니다. -->
 	
-	
+	<!-- Hikari CP 빈으로 등록하기 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="jdbcUrl" 
-				  value="jdbc:mysql://localhost:3306/spring?serverTimezone=Asia/Seoul"></property>
-		<property name="username" value="spring"></property>
-		<property name="password" value="spring"></property>	
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521/XEPDB1"></property>
+		<property name="username" value="myjsp"></property>
+		<property name="password" value="myjsp"></property>	
 	</bean>
-	
-	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+		
+	<!-- DataSource설정  -->
+	<bean id="ds" class="com.zaxxer.hikari.HikariDataSource">
 		<constructor-arg ref="hikariConfig"></constructor-arg>
 	</bean>
 	
-
+	<!-- JDBC템플릿 설정 여기서부터 강의시작 -->
+	
 
 
 
