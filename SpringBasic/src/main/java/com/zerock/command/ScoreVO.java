@@ -2,7 +2,6 @@ package com.zerock.command;
 
 public class ScoreVO {
 
-	
 	int num; 
 	String name; 
 	String kor; 

@@ -1,0 +1,9 @@
+package com.zerock.JDBCTest;
+
+public class JdbcTest {
+	
+	String url="jdbc:oracle:thin:@localhost:1521/XEPDB1"
+	
+	
+	
+}

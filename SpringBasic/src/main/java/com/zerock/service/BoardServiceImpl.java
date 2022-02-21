@@ -2,14 +2,19 @@ package com.zerock.service;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.zerock.command.BoardVO;
 import com.zerock.dao.BoardDAO;
 import com.zerock.dao.BoardDAOImpl;
 
+@Service("boardService")
 public class BoardServiceImpl implements BoardService {
 
-	//1st 
-	BoardDAO boardDAO= new BoardDAOImpl();
+	//DAO 자동주입
+	@Autowired
+	BoardDAO boardDAO;
 	
 	
 	//게시글 등록메서드

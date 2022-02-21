@@ -1,0 +1,14 @@
+package com.zerock.JDBCTest;
+
+public class JdbcTest {
+	
+	String url="jdbc:oracle:thin:@localhost:1521/XEPDB1"; 
+	String uid="myjsp";
+	String upw="myjsp";
+	
+	//src/test/java폴더에는 자바 클래스를 이용하여 여러 작업을 테스트할 용도로 사용됨. 
+	//실행은 Run as => JUnitTest를 사용하여 실행
+	
+	
+	
+}
