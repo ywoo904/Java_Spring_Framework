@@ -32,6 +32,7 @@ public class ScoreServiceImpl implements ScoreService {
 	/*
 	@Override
 	public void scoreRegist(ScoreVO vo) {
+		//vo(커멘드이름) 
 		vo.getName(); 
 		vo.getKor();
 		vo.getEng();
@@ -55,7 +56,8 @@ public class ScoreServiceImpl implements ScoreService {
 		map.put("p3", vo.getEng());
 		map.put("p4", vo.getMath());
 			
-		mapper.insert2(map);
+		boolean result= mapper.insert2(map); 
+		System.out.println("insert결과:"+ result);
 	}
 	
 	

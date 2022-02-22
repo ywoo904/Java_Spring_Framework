@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.springsource.sts.wizard.template"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -16,6 +17,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화두번째.zip"/>
+			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화(2)zip"/>
+			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화.zip"/>
 			<item value="C:\Users\tjoeun709\Desktop\22.02.21월.zip"/>
 		</list>
 	</section>
