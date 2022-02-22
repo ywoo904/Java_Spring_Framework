@@ -1,6 +1,8 @@
 package com.zerock.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.zerock.command.ScoreVO;
 import com.zerock.dao.ScoreDAO;
+import com.zerock.mapper.ScoreMapper;
 
 //@Component  //잘됨
 //@Component("scoreService")   //잘됨
@@ -19,33 +22,55 @@ import com.zerock.dao.ScoreDAO;
 public class ScoreServiceImpl implements ScoreService {
 
 //	ArrayList<ScoreVO> list = new ArrayList<ScoreVO>();
+		
+	//@Autowired 
+	//private ScoreDAO scoreDAO;
 	
-	@Autowired 
-	private ScoreDAO scoreDAO;
+	@Autowired
+	private ScoreMapper mapper; 
+	
+	/*
+	@Override
+	public void scoreRegist(ScoreVO vo) {
+		vo.getName(); 
+		vo.getKor();
+		vo.getEng();
+		vo.getMath();
+		//System.out.println("-------- 서비스 계층 ---------");
+		//System.out.println(dao.getName());
+		//System.out.println(dao.getKor());
+		//System.out.println(dao.getEng());
+		//System.out.println(dao.getMath());
+		
+		mapper.insert(vo);
+	}
+	*/
+	
 	
 	@Override
-	public void scoreRegist(ScoreVO dao) {
-		
-		System.out.println("-------- 서비스 계층 ---------");
-		System.out.println(dao.getName());
-		System.out.println(dao.getKor());
-		System.out.println(dao.getEng());
-		System.out.println(dao.getMath());
-		
-		scoreDAO.scoreInsert(dao);
-		
+	public void scoreRegist(ScoreVO vo) {
+		Map<String,String> map= new HashMap<>(); 
+		map.put("p1", vo.getName()); 
+		map.put("p2", vo.getKor());
+		map.put("p3", vo.getEng());
+		map.put("p4", vo.getMath());
+			
+		mapper.insert2(map);
 	}
+	
+	
+	
 
 	@Override
 	public ArrayList<ScoreVO> scoreResult() {
 		
-		ArrayList<ScoreVO> DB= scoreDAO.scoreSelect(); 
+		ArrayList<ScoreVO> DB= mapper.select(); 
 		return DB;
 	}
 
 	@Override
 	public void scoreDelete(String num) {
-		scoreDAO.scoreDelete(num);
+		mapper.delete(num);
 		
 	}
 
