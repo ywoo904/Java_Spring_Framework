@@ -1,7 +1,9 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>	
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 
@@ -39,15 +41,21 @@
 								
 							</tr>
 						</thead>
-						<tbody>
+						<c:forEach var="good" items="${boardlist}">
+						<tbody>	
 							<tr>
-								<td>테스트</td>
-								<td>테스트</td>
-								<td>테스트</td>
-								<td>테스트</td>
-								<td>테스트</td>
+								<td>${good.num }</td>
+								<td>${good.title }</td>
+								<td>${good.writer }</td>
+								<td>
+									<fmt:formatDate value="${good.regdate }" pattern="yyyy-MM-dd hh:mm:ss"/>
+								</td>
+								<td>
+									<fmt:formatDate value="${good.updatedate }" pattern="yyyy-MM-dd"/>
+								</td>
 							</tr>
 						</tbody>
+						</c:forEach>
 						
 					</table>
 					<!-- 페이징 처리 부분 부트스트랩 참고 -->

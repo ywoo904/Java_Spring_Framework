@@ -16,7 +16,6 @@
   <!-- Custom fonts for this template -->
   <link href="${pageContext.request.contextPath}/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="${pageContext.request.contextPath}/resources/css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -47,7 +46,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="../home.jsp">
           <!--
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <i class="fas fa-fw fa-cog"></i>
@@ -74,14 +73,14 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="############################">
+        <a class="nav-link" href="../board/list">
           <i class="fas fa-fw fa-table"></i>
           <span>공지사항 게시판</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item active">
-        <a class="nav-link" href="############################">
+        <a class="nav-link" href="../board/register">
           <i class="fas fa-fw fa-table"></i>
           <span>공지사항 등록</span></a>
       </li>
@@ -132,7 +131,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">로그인이름을 입력하세요</span>
-                <img class="img-profile rounded-circle" src="/MyWeb/resources/img/user.png">
+                <img class="img-profile rounded-circle" src="/resources/img/user.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

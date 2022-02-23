@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html lang="en">
+<html lang="ko">
 <head>
 
 	<style>
@@ -22,7 +22,7 @@
       <h5>당신의 사진을 넣어보세요</h5>
       <div>
       	<!-- 사진을 넣어보실래요????????경로는 절대경로! -->
-      	<img class="img-fluid" src="/resources/img/test.svg" height="300px" width="500px">
+      	<img class="img-fluid" src="./resources/img/test.svg" height="300px" width="500px">
       </div>
       <p>한지민</p>
       <h3>소셜 링크</h3>
@@ -50,13 +50,13 @@
 		  <!-- 슬라이드 -->
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <img src="/resources/img/1.jpg">
+		      <img src="./resources/img/1.jpg">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="/resources/img/2.jpg">
+		      <img src="./resources/img/2.jpg">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="/resources/img/3.jpg">
+		      <img src="./resources/img/3.jpg">
 		    </div>
 		  </div>
 		  
@@ -76,7 +76,7 @@
       <br>
       <h2>나의 일상</h2>
       <h5>여행, Sep 2, 2017</h5>
-      <div><img class="img-fluid" src="/resources/img/member2.jpg" height="600" width="600"></div>
+      <div><img class="img-fluid" src="./resources/img/member2.jpg" height="600" width="600"></div>
       <p>한지민</p>
       <p>내용을 작성하세요</p>
     </div>

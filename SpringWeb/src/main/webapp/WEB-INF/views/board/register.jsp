@@ -24,22 +24,20 @@
       <div class="card-header bg-primary text-white">게시글 등록</div>
       <div class="card-body">
 
-
-
-        <form role="form" action="##############" method="post">
+        <form role="form" action="register" method="post" id="regform">
           <div class="form-group">
             <label>제목</label>
-            <input class="form-control" name='##############'>
+            <input class="form-control" name="title" id="title">
           </div>
 
           <div class="form-group">
             <label>내용</label>
-            <textarea class="form-control" rows="5" name='##############'></textarea>
+            <textarea class="form-control" rows="5" name="content" id="content"></textarea>
           </div>
 
           <div class="form-group">
             <label>작성자</label>
-            <input class="form-control" name='##############'>
+            <input class="form-control" name="writer" id="writer">
           </div>
           <button type="submit" class="btn btn-primary">등록</button>
           <button type="button" class="btn btn-primary">취소</button>
