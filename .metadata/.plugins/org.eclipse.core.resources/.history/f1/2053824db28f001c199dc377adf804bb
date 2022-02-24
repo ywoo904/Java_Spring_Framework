@@ -1,9 +1,0 @@
-package com.zerock.service;
-
-public interface ScoreService {
-
-	
-	public void scoreRegist(ScoreVO dao);
-	
-	
-}

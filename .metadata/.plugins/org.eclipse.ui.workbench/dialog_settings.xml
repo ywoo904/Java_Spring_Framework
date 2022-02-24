@@ -18,6 +18,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\tjoeun709\Desktop\2.24시험\에플리케이션_테스트시험-우영현.zip"/>
 			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화두번째.zip"/>
 			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화(2)zip"/>
 			<item value="C:\Users\tjoeun709\Desktop\5ju\2.22화.zip"/>

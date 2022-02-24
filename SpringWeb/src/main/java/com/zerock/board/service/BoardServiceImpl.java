@@ -36,20 +36,28 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public BoardVO getContent(int num) {
-		// TODO Auto-generated method stub
-		return null;
+
+	BoardVO vo=mapper.getContent(num);
+	System.out.println("================");
+	System.out.println(vo.getTitle());
+	System.out.println(vo.getContent());
+	System.out.println(vo.getWriter());
+		return vo; 
+	
 	}
 
 	@Override
 	public void update(BoardVO vo) {
-		// TODO Auto-generated method stub
-
+		
+	boolean bool= mapper.updateBoard(vo);
+	System.out.println("성공실패?:"+bool);
 	}
 
 	@Override
 	public void delete(int num) {
-		// TODO Auto-generated method stub
-
+	
+	
+	
 	}
 
 }

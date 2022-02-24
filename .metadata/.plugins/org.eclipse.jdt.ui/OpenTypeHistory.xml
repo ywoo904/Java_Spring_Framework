@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.service{MemberService.java[MemberService" modifiers="513" timestamp="1644998680020"/>
-<typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.dao{ScoreDAO.java[ScoreDAO" modifiers="513" timestamp="1645148051142"/>
-<typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.service{BoardService.java[BoardService" modifiers="513" timestamp="1645152755147"/>
-<typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.dao{BoardDAO.java[BoardDAO" modifiers="513" timestamp="1645162048827"/>
+    <typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.service{MemberService.java[MemberService" modifiers="513" timestamp="1644998680020"/>
+    <typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.dao{ScoreDAO.java[ScoreDAO" modifiers="513" timestamp="1645148051142"/>
+    <typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.service{BoardService.java[BoardService" modifiers="513" timestamp="1645152755147"/>
+    <typeInfo handle="=SpringBasic/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zerock.dao{BoardDAO.java[BoardDAO" modifiers="513" timestamp="1645162048827"/>
 </typeInfoHistroy>

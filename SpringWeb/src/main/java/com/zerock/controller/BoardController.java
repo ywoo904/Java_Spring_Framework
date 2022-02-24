@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zerock.board.command.BoardVO;
 import com.zerock.board.service.BoardService;
@@ -63,5 +65,54 @@ public class BoardController {
 		
 		return "board/list";
 	}
+	
+	//상세보기처리
+	@RequestMapping("/content") 
+	public String content(@RequestParam("num") int num, Model model) { 
+		System.out.println("====컨트롤러계층===="); 
+		System.out.println(num); //content.jsp에서 번호를 잘 받고 있는지 확인 
+		
+		BoardVO vo = service.getContent(num); 
+		model.addAttribute("board", vo);
+		
+		return "board/content"; 
+	} 
+	
+	//게시물수정 
+	@RequestMapping("/modify") 
+	public String modify(@RequestParam("num") int num, Model model ) { 
+		
+		BoardVO vo= service.getContent(num);
+		model.addAttribute("board", vo); 
+		
+		return "board/modify";
+		
+	} 
+	
+	//게시물수정완료 
+	@RequestMapping("/update")
+	public String update(BoardVO vo, Model model) { 
+		System.out.println("------컨트롤계층------"); 
+		System.out.println(vo.getNum());
+		System.out.println(vo.getTitle());
+		System.out.println(vo.getContent());
+		
+		service.update(vo);
+		
+		model.addAttribute("update", vo); 
+		
+	//문제: 
+	//1. Service계층에 전달받은 폼값을 전달하는 update(vo)를 생성하세
+	//2. update () 메서드 안에서 myBatis로 연결하는 BoardUpdate(vo) 메서드를생성해요
+	// 동작하여 업데이트 진행하세요
+			
+		return "redirect:/board/list"; 
+	}
+	
+	
+	
+	
+	
+	
 	
 }
