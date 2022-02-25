@@ -40,4 +40,23 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	DELETE FROM tbl_board WHERE NUM = #{NUM} 
 </delete>
 
+
+<select id="pagingList" 
+resultType="com.zerock.board.command.BoardVO"
+parameterType="com.zerock.board.command.Criteria">
+<![CDATA[
+	select * from 
+	(select rownum as rnum, B.* from tbl_board B 
+	where rownum <= #{count_oracle} order by num desc)
+	where #{pageStart} <= rnum]]>
+
+</select>
+
+
+<select id="getTotal" resultType="int">
+SELECT COUNT(*) FROM TBL_BOARD 
+</select>
+
+
+
 </mapper>
