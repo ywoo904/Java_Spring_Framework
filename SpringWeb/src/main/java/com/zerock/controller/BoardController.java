@@ -109,7 +109,23 @@ public class BoardController {
 		return "redirect:/board/list"; 
 	}
 	
+	//게시물삭제
+	@RequestMapping("/delete") 
+	public String delete(@RequestParam("num") int num) { 
+				       //홈페이지에서 받아 int num으로 처리해라
+		System.out.println("==컨트롤계층==");
+		System.out.println(num);
+		//1. service계층에 num을 전달받아 처리하는 
+		//delete()를 생성
+		//2. MapperInterface에 void deleteBoard()를 선언
+		//3. Service안에 mapper에 선언된 deleteBoard를 실행
+		//4. mapper.xml; 
+		service.delete(num);
 	
+		
+		return "redirect:/board/list";
+		
+	} 
 	
 	
 	

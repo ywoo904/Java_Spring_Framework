@@ -36,7 +36,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </update>
 
 <!-- 게시물 삭제하기 -->
-<delete id="deleteBoard">
-
+<delete id="deleteBoard" parameterType="int">
+	DELETE FROM tbl_board WHERE NUM = #{NUM} 
 </delete>
+
 </mapper>
