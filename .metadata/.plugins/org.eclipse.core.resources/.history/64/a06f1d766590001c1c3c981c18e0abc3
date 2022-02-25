@@ -1,9 +1,0 @@
-package com.zerock.command;
-
-public class BoardVO {
-
-	private int num; 
-	
-	
-	
-}

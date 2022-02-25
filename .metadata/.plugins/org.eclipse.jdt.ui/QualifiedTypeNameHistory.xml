@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="com.zerock.command.MemberVO"/>
     <fullyQualifiedTypeName name="com.zerock.service.MemberService"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
     <fullyQualifiedTypeName name="com.zerock.command.JoinVO"/>
@@ -59,5 +57,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.zerock.board.command.BoardVO"/>
+    <fullyQualifiedTypeName name="com.zerock.board.command.PageVO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="com.zerock.board.command.Criteria"/>
 </qualifiedTypeNameHistroy>

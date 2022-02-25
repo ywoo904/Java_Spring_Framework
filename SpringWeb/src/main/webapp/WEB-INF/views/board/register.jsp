@@ -40,20 +40,40 @@
             <input class="form-control" name="writer" id="writer">
           </div>
           <button type="submit" class="btn btn-primary">등록</button>
-          <button type="button" class="btn btn-primary">취소</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='delete?&pageNum=${cri.pageNum}&count=${cri.count}'">취소</button>
+        <!-- 
+        등록 클릭 시 title, content,writer값을 검증처리하는 스크립트
+        취소시 cri.pageNum과 cri.count값을 전달하여 처리하기
+        $("#아이디") HTML 속성에 한번에 접근... val() =>해당 아이디에 접근하는 경우
+        
+         -->
         </form>
 
 
 
       </div>
-      <!--  end card-body -->
+     
     </div>
-    <!--  end card-body -->
+    
   </div>
-  <!-- end card -->
+  
 </div>
-<!-- /.row -->
 <%@ include file="../include/footer.jsp" %>
+
+<script type="text/javascript">
+function 
+
+
+
+
+</script>
+
+
+
+
+
+
+
 
 </body>
 </html>

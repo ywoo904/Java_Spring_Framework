@@ -42,7 +42,7 @@ public class BoardController {
 	
 	//get방식
 	@RequestMapping(value="/register", method=RequestMethod.GET)
-	public String register() {
+	public String register() {   //페이징 작업... 
 		System.out.println("등록화면처리");
 		return "board/register";
 	}
@@ -116,7 +116,8 @@ public class BoardController {
 	
 	//게시물삭제
 	@RequestMapping("/delete") 
-	public String delete(@RequestParam("num") int num) { 
+	public String delete(@RequestParam("num") int num , Model model,
+			@ModelAttribute("cri") Criteria cri) { 
 				       //홈페이지에서 받아 int num으로 처리해라
 		System.out.println("==컨트롤계층==");
 		System.out.println(num);
