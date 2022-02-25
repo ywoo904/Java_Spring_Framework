@@ -56,8 +56,8 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public void delete(int num) {
 	
-	mapper.deleteBoard(num);
-	
+	 mapper.deleteBoard(num);
+	 
 	
 	}
 
