@@ -10577,3 +10577,33 @@ Caused by: java.io.IOException: Could not find com.zerock.service$BoardServiceIm
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:32:00.528
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:33:04.039
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:33:04.040
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:34:58.888
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:34:58.890
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:36:46.403
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-28 16:36:46.405
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 16:38:38.112
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fdTLZBVx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 16:38:38.112
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.fdTLZBVx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 16:38:38.113
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 16:38:38.114
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fdTLZBVx => OK
