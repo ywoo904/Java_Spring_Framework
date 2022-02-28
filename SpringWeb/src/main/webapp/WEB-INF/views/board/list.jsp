@@ -86,7 +86,7 @@
                        	 	getPageStart()를 통해 마이바티스 값이 전달... 
                        	 	
                        	 	 -->
-							<a class="page-link" href="list?pageNum=${pageMaker.startPage }">Previous</a>
+							<a class="page-link" href="list?pageNum=${pageMaker.startPage-1}">Previous</a>
 						</li>
 					   </c:if> 
 					   

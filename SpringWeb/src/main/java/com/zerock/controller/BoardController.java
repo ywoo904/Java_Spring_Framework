@@ -42,8 +42,10 @@ public class BoardController {
 	
 	//get방식
 	@RequestMapping(value="/register", method=RequestMethod.GET)
-	public String register() {   //페이징 작업... 
+	public String register(@ModelAttribute("cri") Criteria cri) {   //페이징 작업... 
 		System.out.println("등록화면처리");
+	
+		
 		return "board/register";
 	}
 	
