@@ -5375,3 +5375,15 @@ Caused by: java.io.IOException: Could not find com.zerock.service$BoardServiceIm
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-02 16:42:55.154
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-02 16:51:31.535
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tmKKWZNp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-02 16:51:31.536
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.tmKKWZNp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-02 16:51:31.537
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-02 16:51:31.537
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tmKKWZNp => OK
