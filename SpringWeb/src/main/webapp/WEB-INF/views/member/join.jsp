@@ -100,6 +100,47 @@
   <!-- Custom scripts for all pages-->
   <script src="${pageContext.request.contextPath}/resources/js/sb-admin-2.min.js"></script>
    --%>
+   
+   
+   
+   <script> 
+   function IdCheck() { 
+	   alert("사용가능한 아이디입니다.");
+	   $("#id").attr("readonly", true)
+
+	   
+   }
+   
+   
+   //회원가입체크
+   function joinCheck() { 
+	   //attr(속성, 변경할 값)함수는 해당 ID태그의 내부속성을 변경한다. 
+	   //attr(속성) 함수의 매개값이 하나라면 해당 속성여부를 확인 
+	   //val () 함수는 해당 ID태그의 마우스 커서를 위치시킨다. 
+	   //focus () 함수는 해당 ID태그의 마우스 커서를 위치시킨다. 
+	   //submit() 함수는 해당 ID태그의 form을 서밋처리 
+	   
+	   if (!$("#id").attr("readonly")) {  
+		   alert("아이디 중복체크를 해야합니다.");
+	   } else if ($("#name").val().length<1) { 
+		   alert("이름을 입력하세요");
+	   } else if ($("#pw").val().length<1) { 
+		   alert("비밀번호를 입력하세요");
+	   } else if ($("#pw").val() != $("#pwCheck").val()) { 
+		   alert("비밀번호 확인란을 확인해주세요");
+		   $("#pwCheck").focus();
+	   } else if (confirm("회원가입 하시겠습니까?")){  
+		   $("#regForm").submit();
+	   }
+	   
+   }
+
+   
+   </script>
+   
+   
+   
+   
 </body>
 
 </html>

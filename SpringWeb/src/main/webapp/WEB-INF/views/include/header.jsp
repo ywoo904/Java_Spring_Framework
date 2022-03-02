@@ -1,5 +1,6 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +47,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="../../home.jsp">
+        <a class="nav-link" href="${pageContext.request.contextPath}">
           <!--
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <i class="fas fa-fw fa-cog"></i>
@@ -123,29 +124,47 @@
           </form>
 
           <!-- Topbar Navbar -->
+        
           <ul class="navbar-nav ml-auto">
-
+			
             
-
-            <!-- Nav Item - User Information -->
+		<!-- home화면에 session= false삭제 -->
+		<!-- jstl choose 구문-->
+		<c:choose>
+       
+            <c:when test="${sessionScope.user_id!=null }"> 
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">로그인이름을 입력하세요</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.user_id}님 환영합니다</span>
                 <img class="img-profile rounded-circle" src="/resources/img/user.png">
               </a>
-              <!-- Dropdown - User Information -->
+            
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="##############################">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   MyPage
                 </a>
-                
-                <a class="dropdown-item" href="##############################"> <!--data-toggle="modal" data-target="#logoutModal">-->
+                <!--로그아웃 기능 만들기/ 절대경로로 url 넣기 -->
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/member/logout"> <!--data-toggle="modal" data-target="#logoutModal">-->
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
               </div>
             </li>
+            </c:when>
+            
+            <c:otherwise>
+                 <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="${pageContext.request.contextPath}/member/login">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                로그인하세요
+                </span>
+                <img class="img-profile rounded-circle" src="/resources/img/user.png">
+              </a>
+            </c:otherwise>
+            
+		</c:choose>
+
 
           </ul>
 

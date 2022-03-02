@@ -89,6 +89,19 @@
   <script src="${pageContext.request.contextPath}/resources/js/sb-admin-2.min.js"></script>
    --%>
   
+  <!-- jquery 임포트 코드가 로딩된 후에 실행되도록 페이지의 마지막에 작성 -->
+  <script> 
+  $(document).ready(function(){
+	  var msg ='${msg}';
+	 
+	  if(msg!='' ){
+		  alert(msg);
+	  }
+	  
+  });
+  
+  </script>
+  
 
   	
 </body>

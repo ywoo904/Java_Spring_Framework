@@ -41,5 +41,7 @@
 	 
 	 <!-- Mybatis의 맵퍼 패키지를 스캔하는 태그를 작성 -->
 	 <mybatis-spring:scan base-package="com.zerock.board.mapper"/>
+	 <mybatis-spring:scan base-package="com.zerock.member.mapper"/>
+	 
 	
 </beans>
