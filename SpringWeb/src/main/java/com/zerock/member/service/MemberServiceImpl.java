@@ -13,6 +13,15 @@ public class MemberServiceImpl implements MemberService {
 	@Autowired //mybatis 매퍼를 추가
 	private MemberMapper mapper; 
 	
+	@Override
+	public int checkId(String id)  { 
+		
+		int result = mapper.checkId(id); 
+		System.out.println("성공실패?"+result);
+		
+		return result; 
+	}
+	
 	
 	@Override
 	public int join(MemberVO vo) {

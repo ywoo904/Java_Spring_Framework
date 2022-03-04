@@ -101,16 +101,43 @@
   <script src="${pageContext.request.contextPath}/resources/js/sb-admin-2.min.js"></script>
    --%>
    
-   
-   
-   <script> 
-   function IdCheck() { 
-	   alert("사용가능한 아이디입니다.");
-	   $("#id").attr("readonly", true)
+	<script>
+	function IdCheck() {  		
+	 	var id = $("#id").val(); //id태그 value에 접근
+	  	var userId = {"id" : id}; //전송할 데이터의 key값 : value설정
+	 		
+	  	if(id.length < 4) {
+	  		alert("아이디는 4글자 이상 입력하세요");
+	  	} else {
+	  	//ajax문법
+		 	$.ajax({
+		  		type : "post",     //요청 형식
+		  		url : "checkId",   //요청할 주소
+		  		data : userId,//서버에 전송할 데이터  json형식 {key:value}
+		  		//dataType : "json", //서버의 요청후 리턴해 주는 타입 
+		  		error : function(request, error) {
+		  			alert(error + "\n" + request.status);
+		  		},
+		  		success : function(result) { //ajax통신에 성공했을 때 호출될 자바스크립트 함수, 결과 여부가 result매개변수로 전달됨
+				console.log("성공실패여부:" + result); 				
+		  			if(result == 1) { //중복되는 아이디가 존재함
+		  				alert("이미 존재하는 아이디 입니다");
+		  			} else {
+		  				alert("사용가능한 아이디 입니다");
+		  				$("#id").attr("readonly", true);
+		  				//attr(속성, 변경할값) 함수는 태그의 내부속성을 변경하는 함수 입니다.
+		  			}
+				}
+		  	})
+	  	} //end else
+	  	console.log(userId);
+	}
+	</script>   
 
-	   
-   }
-   
+
+
+   <script> 
+
    
    //회원가입체크
    function joinCheck() { 

@@ -7,6 +7,8 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.zerock.member.command.MemberVO;
@@ -107,7 +109,22 @@ public class MemberController {
 	} 
 	
 	
+	//AJAX 테스트에 접속 
+	@RequestMapping("/ajax_test")
+	public String test() {  
+		
+		return "member/ajax_test"; 
+	}
 	
+	//아이디 중복확인처리
+	@RequestMapping("/checkId") 
+	@ResponseBody
+	public int CheckId(@RequestParam("id") String id) {  
+		int result = service.checkId(id); 
+		
+		return result; 
+		
+	}
 	
 	
 }

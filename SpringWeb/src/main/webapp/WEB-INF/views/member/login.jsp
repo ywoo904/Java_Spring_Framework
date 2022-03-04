@@ -77,7 +77,7 @@
   </div>
   
 
-  <!-- Bootstrap core JavaScript-->
+  <!-- J 쿼리 다운로드 및 사용링크-->
   <script src="${pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
   <%-- 
   <script src="${pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

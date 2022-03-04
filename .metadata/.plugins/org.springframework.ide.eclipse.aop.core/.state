@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SpringWeb"/>
+<aop-project name="JavaConfigure"/>
 <aop-project name="test"/>
 <aop-project name="SpringBasic"/>
 </aop-reference-model>

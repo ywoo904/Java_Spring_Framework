@@ -2,6 +2,21 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+<!--  
+1) 세션정보가 존재하는 경우 => Mypage[정보수정,패스워드 변경, 회원탈퇴)  
+2) 로그아웃 
+3) 패스워드 변경 => 인증확인: 세션의 ID와 패스워드 재인증 
+			  => 패스워드 변경 [$a.jax를 이용하여 처리가 가능함]
+			 
+4) 게시판 파일업로드 
+
+lombok - setter/getter, 생성자 작업을 어노테이션으로 처리
+
+
+
+ -->
+
+
 <html lang="en">
 <head>
 
